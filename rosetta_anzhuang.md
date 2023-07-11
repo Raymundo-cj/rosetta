@@ -43,9 +43,9 @@ mkdir build
 cd build
 cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON
 make
-make check
+make check # 这个执行完会有一些报错信息，接着往下执行也可以安装成功，不是很懂为啥？
 sudo make install
-source 
+source /usr/local/gromacs/bin/GMXRC
 ```
 
 
